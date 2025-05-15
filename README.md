@@ -15,10 +15,17 @@ Docker
 1. Clone this repository (if you haven't already):
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Prakshi10/prakshi-devops-challenge.git
    ```
 
-2. Navigate to the project directory:
+2. Run docker commands to create docker image and run the docker container:
 
    ```bash
-   cd your-repo-name
+   docker build -t simpletimeservice .
+   docker run -d -p 5000:5000 simpletimeservice
+    ```
+3. you can pull the image from dockerhub and run the container:
+      ```bash
+      docker pull  prakshigarg/simpletimeservice:latest
+      docker run -d -p 5000:5000 simpletimeservice 
+       ```
