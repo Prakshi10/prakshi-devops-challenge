@@ -24,11 +24,6 @@ Docker
    docker build -t simpletimeservice .
    docker run -d -p 5000:5000 simpletimeservice
     ```
-3. # you can pull the image from dockerhub and run the container:
-      ```bash
-      docker pull  prakshigarg/simpletimeservice:latest
-      docker run -d -p 5000:5000 simpletimeservice
-      
-     ```
-4. # Access the application
+
+3. # Access the application
    Visit http://localhost:5000/ to see the current timestamp and your IP address in JSON format.
